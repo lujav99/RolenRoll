@@ -36,22 +36,556 @@
                 android:layout_height="50dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Nombre" />
+                android:text="Nombre"
+                android:gravity="center"/>
 
-            <Spinner
-                android:id="@+id/spinnerRazaPj"
+            <TextView
+                android:id="@+id/txtvRaza"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                android:text="Raza"
+                android:gravity="center"/>
 
-            <Spinner
-                android:id="@+id/spinnerClasePj"
+            <TextView
+                android:id="@+id/txtvClase"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                android:text="Clase"
+                android:gravity="center"/>
 
 
         </LinearLayout>
 
     </GridLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                android:text="Valores de habilidad"
+                android:padding="5dp"
+                android:gravity="center"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                >
+                <!--Text views-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Total"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Mod"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Base"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Misc"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Temp"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <!--STR-->
+                <TableRow
+                    android:background="@color/lightgray">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="STR"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/etxtSTRMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSTRTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--DEX-->
+                <TableRow
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="DEX"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtDEXMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDEXTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--CON-->
+                <TableRow
+                    android:background="@color/lightgray">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="CON"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtCONMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtCONTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--INT-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="INT"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvINTTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvINTMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvINTBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtINTMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtINTTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                </TableRow>
+                <!--WIS-->
+                <TableRow
+                    android:background="@color/lightgray">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="WIS"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvWISTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvWISMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvWISBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtWISMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                    <EditText
+                        android:id="@+id/etxtWISTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--CHA-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="CHA"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCHATotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCHAMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCHABase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtCHAMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtCHATemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                android:text="Salvaciones"
+                android:padding="5dp"
+                android:gravity="center"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                >
+                <!--Text views-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Total"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Mod"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Base"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Misc"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="Temp"
+                        android:padding="5dp"
+                        android:gravity="center"/>
+
+                </TableRow>
+                <!--Fortitude-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="FOR"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvSTRBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/etxtSTRMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSTRTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Reflex-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="DEX"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvDEXBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtDEXMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDEXTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Will-->
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text="CON"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/txtvCONBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding"
+                        android:text=""
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/etxtCONMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtCONTemp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
