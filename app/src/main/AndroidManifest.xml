@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoleRoll">
         <activity
-            android:name=".CrearPersonaje"
+            android:name=".VerPersonaje"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

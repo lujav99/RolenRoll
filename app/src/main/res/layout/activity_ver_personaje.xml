@@ -14,14 +14,63 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <RelativeLayout
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            app:srcCompat="@drawable/logo_rolenroll" />
+            android:layout_height="wrap_content"
+            android:layout_width="160dp">
+            <Button
+                android:id="@+id/bttnVolverDeVerPj"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="<" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="+ info"
+                android:layout_toRightOf="@+id/bttnVolverDeVerPj"
+                android:layout_marginHorizontal="15dp" />
+
+            <TextView
+                android:id="@+id/txtvIconoPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_below="@+id/bttnVolverDeVerPj"
+                android:textColor="#FF000000"
+                android:textSize="50dp"
+                android:text="♥" />
+
+            <EditText
+                android:id="@+id/etxtPSActual"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="30dp"
+                android:text="PS"
+                android:layout_below="@+id/bttnVolverDeVerPj"
+                android:layout_toRightOf="@+id/txtvIconoPS"
+
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtvPSMaxima"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bttnVolverDeVerPj"
+                android:layout_toRightOf="@id/etxtPSActual"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="/PS"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,6 +106,9 @@
 
 
         </LinearLayout>
+
+
+
 
     </GridLayout>
 
@@ -943,7 +995,7 @@
                         android:ems="10"
                         android:inputType="number" />
                 </TableRow>
-                <!--Concentración CON-->
+                <!--Concentracion CON-->
                 <TableRow>
                     <TextView
                         android:layout_width="60dp"
@@ -1373,7 +1425,7 @@
                         android:ems="10"
                         android:inputType="number" />
                 </TableRow>
-                <!--Falsificación INT-->
+                <!--Falsificacion INT-->
                 <TableRow>
                     <TextView
                         android:layout_width="60dp"
@@ -1381,21 +1433,21 @@
                         android:text="Falsificación"
                         android:gravity="center"/>
                     <TextView
-                        android:id="@+id/txtvFalsificaciónTotal"
+                        android:id="@+id/txtvFalsificacionTotal"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:textSize="@dimen/browser_actions_context_menu_min_padding"
                         android:text=""
                         android:gravity="center"/>
                     <TextView
-                        android:id="@+id/txtvFalsificaciónMod"
+                        android:id="@+id/txtvFalsificacionMod"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:textSize="@dimen/browser_actions_context_menu_min_padding"
                         android:text=""
                         android:gravity="center"/>
                     <TextView
-                        android:id="@+id/txtvFalsificaciónPuntos"
+                        android:id="@+id/txtvFalsificacionPuntos"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:textSize="@dimen/browser_actions_context_menu_min_padding"
@@ -1403,20 +1455,20 @@
                         android:gravity="center"/>
 
                     <EditText
-                        android:id="@+id/etxtFalsificaciónPenalizador"
+                        android:id="@+id/etxtFalsificacionPenalizador"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:ems="10"
                         android:inputType="number" />
 
                     <EditText
-                        android:id="@+id/etxtFalsificaciónMisc"
+                        android:id="@+id/etxtFalsificacionMisc"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:ems="10"
                         android:inputType="number" />
                 </TableRow>
-                <!--Hechicería INT-->
+                <!--Hechiceria INT-->
                 <TableRow>
                     <TextView
                         android:layout_width="60dp"
@@ -1760,7 +1812,7 @@
                         android:ems="10"
                         android:inputType="number" />
                 </TableRow>
-                <!--Profesión WIS-->
+                <!--Profesion WIS-->
                 <TableRow>
                     <TextView
                         android:layout_width="60dp"
@@ -2458,7 +2510,7 @@
                         android:text="Usar objeto mágico"
                         android:gravity="center"/>
                     <TextView
-                        android:id="@+id/txtvTotal"
+                        android:id="@+id/txtvUOMTotal"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:textSize="@dimen/browser_actions_context_menu_min_padding"

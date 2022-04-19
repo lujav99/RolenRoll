@@ -2,10 +2,11 @@ package com.tfg.lr.roleroll
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 
-class CrearPersonaje : AppCompatActivity() {
+class VerPersonaje : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var etxtNombrePj: EditText
     private lateinit var txtvRazaPj: TextView
@@ -138,7 +139,7 @@ class CrearPersonaje : AppCompatActivity() {
     // Avistar WIS
     private lateinit var txtvAvistarTotal:TextView
     private lateinit var txtvAvistarMod:TextView
-    private lateinit var txtvAvistarPenalizador:TextView
+    private lateinit var txtvAvistarPuntos:TextView
 
     private lateinit var etxtAvistarMisc: EditText
     private lateinit var etxtAvistarPenalizador: EditText
@@ -353,7 +354,7 @@ class CrearPersonaje : AppCompatActivity() {
 
     // Saber Ingeniero INT
     private lateinit var txtvSITotal:TextView
-    private lateinit var txtvSIrMod:TextView
+    private lateinit var txtvSIMod:TextView
     private lateinit var txtvSIPuntos:TextView
 
     private lateinit var etxtSIMisc: EditText
@@ -442,7 +443,7 @@ class CrearPersonaje : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crear_personaje)
+        setContentView(R.layout.activity_ver_personaje)
 
         inicializarVariables()
 
@@ -451,6 +452,7 @@ class CrearPersonaje : AppCompatActivity() {
 
     private fun inicializarVariables() {
         TODO("Iniciar todas las variables y asignar el onClickListener")
+
         etxtNombrePj = findViewById(R.id.etxtNombrePj)
         txtvRazaPj = findViewById(R.id.txtvRazaPj)
         txtvClasePj = findViewById(R.id.txtvClasePj)
@@ -539,26 +541,252 @@ class CrearPersonaje : AppCompatActivity() {
         etxtADLFMisc = findViewById(R.id.etxtADLFMisc)
         etxtADLFPenalizador = findViewById(R.id.etxtADLFPenalizador)
 
+        txtvAITotal = findViewById(R.id.txtvAITotal)
+        txtvAIMod = findViewById(R.id.txtvAIMod)
+        txtvAIPuntos = findViewById(R.id.txtvAIPuntos)
+        etxtAIMisc = findViewById(R.id.etxtAIMisc)
+        etxtAIPenalizador = findViewById(R.id.etxtAIPenalizador)
+
+        txtvAvistarTotal= findViewById(R.id.txtvAvistarTotal)
+        txtvAvistarMod = findViewById(R.id.txtvAvistarMod)
+        txtvAvistarPuntos = findViewById(R.id.txtvAvistarPuntos)
+        etxtAvistarMisc = findViewById(R.id.etxtAvistarMisc)
+        etxtAvistarPenalizador = findViewById(R.id.etxtAvistarPenalizador)
+
+        txtvBuscarTotal=findViewById(R.id.txtvBuscarTotal)
+        txtvBuscarMod = findViewById(R.id.txtvBuscarMod)
+        txtvBuscarPuntos = findViewById(R.id.txtvBuscarPuntos)
+        etxtBuscarMisc = findViewById(R.id.etxtBuscarMisc)
+        etxtBuscarPenalizador = findViewById(R.id.etxtBuscarPenalizador)
+
+        txtvConcentracionTotal = findViewById(R.id.txtvConcentracionTotal)
+        txtvConcentracionMod = findViewById(R.id.txtvConcentracionMod)
+        txtvConcentracionPuntos = findViewById(R.id.txtvConcentracionPuntos)
+        etxtConcentracionMisc = findViewById(R.id.etxtConcentracionMisc)
+        etxtConcentracionPenalizador = findViewById(R.id.etxtConcentracionPenalizador)
+
+        txtvCurarTotal = findViewById(R.id.txtvCurarTotal)
+        txtvCurarMod = findViewById(R.id.txtvCurarMod)
+        txtvCurarPuntos = findViewById(R.id.txtvCurarPuntos)
+        etxtCurarMisc = findViewById(R.id.etxtCurarMisc)
+        etxtCurarPenalizador = findViewById(R.id.etxtCurarPenalizador)
+
+        txtvDDTotal = findViewById(R.id.txtvDDTotal)
+        txtvDDMod = findViewById(R.id.txtvDDMod)
+        txtvDDPuntos = findViewById(R.id.txtvDDPuntos)
+        etxtDDMisc = findViewById(R.id.etxtDDMisc)
+        etxtDDPenalizador = findViewById(R.id.etxtDDPenalizador)
+
+        txtvDETotal = findViewById(R.id.txtvDETotal)
+        txtvDEMod = findViewById(R.id.txtvDEMod)
+        txtvDEPuntos = findViewById(R.id.txtvDEPuntos)
+        etxtDEMisc = findViewById(R.id.etxtDEMisc)
+        etxtDEPenalizador = findViewById(R.id.etxtDEPenalizador)
+
+        txtvDiplomaciaTotal = findViewById(R.id.txtvDiplomaciaTotal)
+        txtvDiplomaciaMod = findViewById(R.id.txtvDiplomaciaMod)
+        txtvDiplomaciaPuntos = findViewById(R.id.txtvDiplomaciaPuntos)
+        etxtDiplomaciaMisc = findViewById(R.id.etxtDiplomaciaMisc)
+        etxtDiplomaciaPenalizador = findViewById(R.id.etxtDiplomaciaPenalizador)
+
+        txtvDisfrazarseTotal = findViewById(R.id.txtvDisfrazarseTotal)
+        txtvDisfrazarseMod = findViewById(R.id.txtvDisfrazarseMod)
+        txtvDisfrazarsePuntos = findViewById(R.id.txtvDisfrazarsePuntos)
+        etxtDisfrazarseMisc = findViewById(R.id.etxtDisfrazarseMisc)
+        etxtDisfrazarsePenalizador = findViewById(R.id.etxtDisfrazarsePenalizador)
+
+        txtvEngannarTotal = findViewById(R.id.txtvEngannarTotal)
+        txtvEngannarMod = findViewById(R.id.txtvEngannarMod)
+        txtvEngannarPuntos = findViewById(R.id.txtvEngannarPuntos)
+        etxtEngannarMisc = findViewById(R.id.etxtEngannarMisc)
+        etxtEngannarPenalizador = findViewById(R.id.etxtEngannarPenalizador)
+
+        txtvEquilibrioTotal = findViewById(R.id.txtvEquilibrioTotal)
+        txtvEquilibrioMod = findViewById(R.id.txtvEquilibrioMod)
+        txtvEquilibrioPuntos = findViewById(R.id.txtvEquilibrioPuntos)
+        etxtEquilibrioMisc = findViewById(R.id.etxtEquilibrioMisc)
+        etxtEquilibrioPenalizador = findViewById(R.id.etxtEquilibrioPenalizador)
+
+        txtvEscalarTotal = findViewById(R.id.txtvEscalarTotal)
+        txtvEscalarMod = findViewById(R.id.txtvEscalarMod)
+        txtvEscalarPuntos = findViewById(R.id.txtvEscalarPuntos)
+        etxtEscalarMisc = findViewById(R.id.etxtEscalarMisc)
+        etxtEscalarPenalizador = findViewById(R.id.etxtEscalarPenalizador)
+
+        txtvEscucharTotal = findViewById(R.id.txtvEscucharTotal)
+        txtvEscucharMod = findViewById(R.id.txtvEscucharMod)
+        txtvEscucharPuntos = findViewById(R.id.txtvEscucharPuntos)
+        etxtEscucharMisc = findViewById(R.id.etxtEscucharMisc)
+        etxtEscucharPenalizador = findViewById(R.id.etxtEscucharPenalizador)
+
+        txtvFalsificacionTotal = findViewById(R.id.txtvFalsificacionTotal)
+        txtvFalsificacionMod = findViewById(R.id.txtvFalsificacionMod)
+        txtvFalsificacionPuntos = findViewById(R.id.txtvFalsificacionPuntos)
+        etxtFalsificacionMisc = findViewById(R.id.etxtFalsificacionMisc)
+        etxtFalsificacionPenalizador = findViewById(R.id.etxtFalsificacionPenalizador)
+
+        txtvHechiceriaTotal = findViewById(R.id.txtvHechiceriaTotal)
+        txtvHechiceriaMod = findViewById(R.id.txtvHechiceriaMod)
+        txtvHechiceriaPuntos = findViewById(R.id.txtvHechiceriaPuntos)
+        etxtHechiceriaMisc = findViewById(R.id.etxtHechiceriaMisc)
+        etxtHechiceriaPenalizador = findViewById(R.id.etxtHechiceriaPenalizador)
+
+        txtvIntimidarTotal = findViewById(R.id.txtvIntimidarTotal)
+        txtvIntimidarMod = findViewById(R.id.txtvIntimidarMod)
+        txtvIntimidarPuntos = findViewById(R.id.txtvIntimidarPuntos)
+        etxtIntimidarMisc = findViewById(R.id.etxtIntimidarMisc)
+        etxtIntimidarPenalizador = findViewById(R.id.etxtIntimidarPenalizador)
+
+        txtvJDMTotal = findViewById(R.id.txtvJDMTotal)
+        txtvJDMMod = findViewById(R.id.txtvJDMMod)
+        txtvJDMPuntos = findViewById(R.id.txtvJDMPuntos)
+        etxtJDMMisc = findViewById(R.id.etxtJDMMisc)
+        etxtJDMPenalizador = findViewById(R.id.etxtJDMPenalizador)
+
+        txtvMATotal = findViewById(R.id.txtvMATotal)
+        txtvMAMod = findViewById(R.id.txtvMAMod)
+        txtvMAPuntos = findViewById(R.id.txtvMAPuntos)
+        etxtMAMisc = findViewById(R.id.etxtMAMisc)
+        etxtMAPenalizador = findViewById(R.id.etxtMAPenalizador)
+
+        txtvMontarTotal = findViewById(R.id.txtvMontarTotal)
+        txtvMontarMod = findViewById(R.id.txtvMontarMod)
+        txtvMontarPuntos = findViewById(R.id.txtvMontarPuntos)
+        etxtMontarMisc = findViewById(R.id.etxtMontarMisc)
+        etxtMontarPenalizador = findViewById(R.id.etxtMontarPenalizador)
+
+        txtvMESTotal = findViewById(R.id.txtvMESTotal)
+        txtvMESMod = findViewById(R.id.txtvMESMod)
+        txtvMESPuntos = findViewById(R.id.txtvMESPuntos)
+        etxtMESMisc = findViewById(R.id.etxtMESMisc)
+        etxtMESPenalizador = findViewById(R.id.etxtMESPenalizador)
+
+        txtvNadarTotal = findViewById(R.id.txtvNadarTotal)
+        txtvNadarMod = findViewById(R.id.txtvNadarMod)
+        txtvNadarPuntos = findViewById(R.id.txtvNadarPuntos)
+        etxtNadarMisc = findViewById(R.id.etxtNadarMisc)
+        etxtNadarPenalizador = findViewById(R.id.etxtNadarPenalizador)
+
+        txtvOcultarTotal = findViewById(R.id.txtvOcultarTotal)
+        txtvOcultarMod = findViewById(R.id.txtvOcultarMod)
+        txtvOcultarPuntos = findViewById(R.id.txtvOcultarPuntos)
+        etxtOcultarMisc = findViewById(R.id.etxtOcultarMisc)
+        etxtOcultarPenalizador = findViewById(R.id.etxtOcultarPenalizador)
+
+        txtvProfesionTotal = findViewById(R.id.txtvProfesionTotal)
+        txtvProfesionMod = findViewById(R.id.txtvProfesionMod)
+        txtvProfesionPuntos = findViewById(R.id.txtvProfesionPuntos)
+        etxtProfesionMisc = findViewById(R.id.etxtProfesionMisc)
+        etxtProfesionPenalizador = findViewById(R.id.etxtProfesionPenalizador)
+
+        txtvRITotal = findViewById(R.id.txtvRITotal)
+        txtvRIMod = findViewById(R.id.txtvRIMod)
+        txtvRIPuntos = findViewById(R.id.txtvRIPuntos)
+        etxtRIMisc = findViewById(R.id.etxtRIMisc)
+        etxtRIPenalizador = findViewById(R.id.etxtRIPenalizador)
+
+        txtvSATotal = findViewById(R.id.txtvSATotal)
+        txtvSAMod = findViewById(R.id.txtvSAMod)
+        txtvSAPuntos = findViewById(R.id.txtvSAPuntos)
+        etxtSAMisc = findViewById(R.id.etxtSAMisc)
+        etxtSAPenalizador = findViewById(R.id.etxtSAPenalizador)
+
+        txtvSHTotal = findViewById(R.id.txtvSHTotal)
+        txtvSHMod = findViewById(R.id.txtvSHMod)
+        txtvSHPuntos = findViewById(R.id.txtvSHPuntos)
+        etxtSHMisc = findViewById(R.id.etxtSHMisc)
+        etxtSHPenalizador = findViewById(R.id.etxtSHPenalizador)
+
+        txtvSMTotal = findViewById(R.id.txtvSMTotal)
+        txtvSMMod = findViewById(R.id.txtvSMMod)
+        txtvSMPuntos = findViewById(R.id.txtvSMPuntos)
+        etxtSMMisc = findViewById(R.id.etxtSMMisc)
+        etxtSMPenalizador = findViewById(R.id.etxtSMPenalizador)
+
+        txtvSGTotal = findViewById(R.id.txtvSGTotal)
+        txtvSGMod = findViewById(R.id.txtvSGMod)
+        txtvSGPuntos = findViewById(R.id.txtvSGPuntos)
+        etxtSGMisc = findViewById(R.id.etxtSGMisc)
+        etxtSGPenalizador = findViewById(R.id.etxtSGPenalizador)
+
+        txtvSITotal = findViewById(R.id.txtvSITotal)
+        txtvSIMod = findViewById(R.id.txtvSIMod)
+        txtvSIPuntos = findViewById(R.id.txtvSIPuntos)
+        etxtSIMisc = findViewById(R.id.etxtSIMisc)
+        etxtSIPenalizador = findViewById(R.id.etxtSIPenalizador)
+
+        txtvSLTotal = findViewById(R.id.txtvSLTotal)
+        txtvSLMod = findViewById(R.id.txtvSLMod)
+        txtvSLPuntos = findViewById(R.id.txtvSLPuntos)
+        etxtSLMisc = findViewById(R.id.etxtSLMisc)
+        etxtSLPenalizador = findViewById(R.id.etxtSLPenalizador)
+
+        txtvSLPTotal = findViewById(R.id.txtvSLPTotal)
+        txtvSLPMod = findViewById(R.id.txtvSLPMod)
+        txtvSLPPuntos = findViewById(R.id.txtvSLPPuntos)
+        etxtSLPMisc = findViewById(R.id.etxtSLPMisc)
+        etxtSLPPenalizador = findViewById(R.id.etxtSLPPenalizador)
+
+        txtvSNaTotal = findViewById(R.id.txtvSNaTotal)
+        txtvSNaMod = findViewById(R.id.txtvSNaMod)
+        txtvSNaPuntos = findViewById(R.id.txtvSNaPuntos)
+        etxtSNaMisc = findViewById(R.id.etxtSNaMisc)
+        etxtSNaPenalizador = findViewById(R.id.etxtSNaPenalizador)
+
+        txtvSNoTotal = findViewById(R.id.txtvSNoTotal)
+        txtvSNoMod = findViewById(R.id.txtvSNoMod)
+        txtvSNoPuntos = findViewById(R.id.txtvSNoPuntos)
+        etxtSNoMisc = findViewById(R.id.etxtSNoMisc)
+        etxtSNoPenalizador = findViewById(R.id.etxtSNoPenalizador)
+
+        txtvSRTotal = findViewById(R.id.txtvSRTotal)
+        txtvSRMod = findViewById(R.id.txtvSRMod)
+        txtvSRPuntos = findViewById(R.id.txtvSRPuntos)
+        etxtSRMisc = findViewById(R.id.etxtSRMisc)
+        etxtSRPenalizador = findViewById(R.id.etxtSRPenalizador)
+
+        txtvSaltarTotal = findViewById(R.id.txtvSaltarTotal)
+        txtvSaltarMod = findViewById(R.id.txtvSaltarMod)
+        txtvSaltarPuntos = findViewById(R.id.txtvSaltarPuntos)
+        etxtSaltarMisc = findViewById(R.id.etxtSaltarMisc)
+        etxtSaltarPenalizador = findViewById(R.id.etxtSaltarPenalizador)
+
+        txtvSupervivenciaTotal = findViewById(R.id.txtvSupervivenciaTotal)
+        txtvSupervivenciaMod = findViewById(R.id.txtvSupervivenciaMod)
+        txtvSupervivenciaPuntos = findViewById(R.id.txtvSupervivenciaPuntos)
+        etxtSupervivenciaMisc = findViewById(R.id.etxtSupervivenciaMisc)
+        etxtSupervivenciaPenalizador = findViewById(R.id.etxtSupervivenciaPenalizador)
+
+        txtvTasarTotal = findViewById(R.id.txtvTasarTotal)
+        txtvTasarMod = findViewById(R.id.txtvTasarMod)
+        txtvTasarPuntos = findViewById(R.id.txtvTasarPuntos)
+        etxtTasarMisc = findViewById(R.id.etxtTasarMisc)
+        etxtTasarPenalizador = findViewById(R.id.etxtTasarPenalizador)
+
+        txtvUCTotal = findViewById(R.id.txtvUCTotal)
+        txtvUCMod = findViewById(R.id.txtvUCMod)
+        txtvUCPuntos = findViewById(R.id.txtvUCPuntos)
+        etxtUCMisc = findViewById(R.id.etxtUCMisc)
+        etxtUCPenalizador = findViewById(R.id.etxtUCPenalizador)
+
+        txtvUOMTotal = findViewById(R.id.txtvUOMTotal)
+        txtvUOMMod = findViewById(R.id.txtvUOMMod)
+        txtvUOMPuntos = findViewById(R.id.txtvUOMPuntos)
+        etxtUOMMisc = findViewById(R.id.etxtUOMMisc)
+        etxtUOMPenalizador = findViewById(R.id.etxtUOMPenalizador)
 
 
-
+        /*
+        *  Declarar los listener
+        */
 
 
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    override fun onClick(p0: View?) {
+        TODO("Not yet implemented")
+    }
 
 
 }
