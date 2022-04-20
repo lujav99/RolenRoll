@@ -5,8 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import com.google.firebase.firestore.FirebaseFirestore
 
-class VerPersonaje : AppCompatActivity(), View.OnClickListener {
+class VerPersonaje : AppCompatActivity() {
+
+    private val bd = FirebaseFirestore.getInstance()
+
 
     private lateinit var etxtNombrePj: EditText
     private lateinit var txtvRazaPj: TextView
@@ -451,7 +455,8 @@ class VerPersonaje : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun inicializarVariables() {
-        TODO("Iniciar todas las variables y asignar el onClickListener")
+
+        // Aquí se inicializan todas las variables
 
         etxtNombrePj = findViewById(R.id.etxtNombrePj)
         txtvRazaPj = findViewById(R.id.txtvRazaPj)
@@ -784,9 +789,7 @@ class VerPersonaje : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    override fun onClick(p0: View?) {
-        TODO("Not yet implemented")
-    }
+    
 
 
 }

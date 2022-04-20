@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class RegistroUsuario : AppCompatActivity(), View.OnClickListener {
+class RegistroUsuario : AppCompatActivity() {
 
     private lateinit var etxtRegisEmail: EditText
     private lateinit var etxtRegisContrasenna1: EditText
@@ -18,7 +18,7 @@ class RegistroUsuario : AppCompatActivity(), View.OnClickListener {
     private lateinit var bttnRegistrar: Button
     private lateinit var bttnIrALogIn: Button
 
-    private lateinit var auth: FirebaseAuth
+//    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,21 +30,12 @@ class RegistroUsuario : AppCompatActivity(), View.OnClickListener {
         bttnRegistrar = findViewById(R.id.bttnRegistrar)
         bttnIrALogIn = findViewById(R.id.bttnIrALogIn)
 
-        bttnRegistrar.setOnClickListener(this)
-        bttnIrALogIn.setOnClickListener(this)
-    }
-
-    override fun onClick(view: View?) {
-        TODO("Not yet implemented")
-        when (view?.id) {
-            R.id.bttnRegistrar-> {
-                registrar()
-            }
-
-            R.id.bttnIrALogIn-> {
-                startActivity(Intent(this, LogInUsuario::class.java))
-                finish()
-            }
+        bttnRegistrar.setOnClickListener {
+            registrar()
+        }
+        bttnIrALogIn.setOnClickListener{
+            startActivity(Intent(this, LogInUsuario::class.java))
+            finish()
         }
     }
 
@@ -54,16 +45,34 @@ class RegistroUsuario : AppCompatActivity(), View.OnClickListener {
         var contrasenna2 = etxtRegisContrasenna2.text.toString()
 
         if (contrasenna1.equals(contrasenna2) && chechEmpty(email, contrasenna1, contrasenna2)) {
-            auth.createUserWithEmailAndPassword(email,contrasenna1)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        startActivity(Intent(this, MainActivity::class.java))
+
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, contrasenna1)
+                .addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        startActivity(Intent(this, VerPersonaje::class.java))
                         finish()
                     } else {
-                        hacerToast("Algo salió mal")
+                        Reutilizables.hacerToast(this, "MAL")
                     }
-
                 }
+
+
+//            auth.createUserWithEmailAndPassword(email,contrasenna1)
+//                .addOnCompleteListener(this) { task ->
+//                    if (task.isSuccessful) {
+//                        startActivity(Intent(this, MainActivity::class.java))
+//                        finish()
+//                    } else {
+//                        Reutilizables.hacerToast(this, "Algo salió mal")
+//                    }
+//
+//                }
+        }else {
+            if (contrasenna1.equals(contrasenna2)) {
+                Reutilizables.hacerToast(this, "La contraseña debe ser la misma")
+            } else {
+                Reutilizables.hacerToast(this, "Rellena todos los campos")
+            }
         }
     }
 
@@ -71,7 +80,5 @@ class RegistroUsuario : AppCompatActivity(), View.OnClickListener {
         return email.isNotEmpty() && contrasenna1.isNotEmpty() && contrasenna2.isNotEmpty()
     }
 
-    private fun hacerToast(mensaje: String) {
-        Toast.makeText(applicationContext, mensaje, Toast.LENGTH_SHORT).show()
-    }
+
 }

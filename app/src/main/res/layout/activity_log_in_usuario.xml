@@ -10,17 +10,19 @@
     android:orientation="vertical"
     android:layout_margin="50dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Inicio de sesión"
+        android:textAlignment="center"
+        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        app:srcCompat="@drawable/logo_RoleNRoll" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Registro de usuario" />
+        app:srcCompat="@drawable/logo_rolenroll" />
 
     <EditText
         android:id="@+id/etxtLogInEmail"
