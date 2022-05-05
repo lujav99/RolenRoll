@@ -7,6 +7,11 @@ import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.auth.FirebaseAuth
 
+enum class ProviderType {
+    BASIC,
+    GOOGLE
+}
+
 class LogInUsuario : AppCompatActivity() {
 
     private lateinit var etxtLogInEmail: EditText
@@ -18,6 +23,7 @@ class LogInUsuario : AppCompatActivity() {
     private lateinit var email: String
     private lateinit var contrasenna: String
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in_usuario)
@@ -26,6 +32,11 @@ class LogInUsuario : AppCompatActivity() {
         etxtLogInContrasenna = findViewById(R.id.etxtLogInContrasenna)
         bttnLogIn = findViewById(R.id.bttnLogIn)
         bttnIrARegistro = findViewById(R.id.bttnIrARegistro)
+
+
+        // Guardar datos
+        //val prefs = getSharedPreferences()
+
 
         bttnLogIn.setOnClickListener {
             logear();

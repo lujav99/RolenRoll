@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tfg.lr.roleroll.ui.pHabilidadySalvaciones.PHabilidadySalvacionesFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_pHabilidadySalvaciones" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.tfg.lr.roleroll.ui.datosIniciales.DatosInicialesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_datos_iniciales" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.tfg.lr.roleroll.ui.habilidades.HabilidadesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_habilidades" />
+</navigation>

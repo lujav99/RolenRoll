@@ -13,10 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoleRoll">
         <activity
-            android:name=".VerPersonaje"
-            android:exported="false" />
+            android:name=".CrearPersonaje"
+            android:exported="false"
+            android:label="@string/title_activity_crear_personaje" />
         <activity
-            android:name=".MainActivity"
+            android:name=".VerPersonaje"
             android:exported="false" />
         <activity
             android:name=".LogInUsuario"
