@@ -457,7 +457,7 @@ class VerPersonaje : AppCompatActivity() {
     private fun rellenarTablas() {
 
         // Llamar a BD
-       // leerDatos()
+        leerDatos()
 
         // Hacer operaciones
         tablaDePuntosDeHabilidad()
@@ -466,7 +466,7 @@ class VerPersonaje : AppCompatActivity() {
 
 
     }
-/*
+
     private fun leerDatos() {
         Reutilizables.db.collection("personajes").document(nombre).get().addOnSuccessListener {
             etxtNombrePj.setText(it.get("nombre_pj") as String)
@@ -474,8 +474,6 @@ class VerPersonaje : AppCompatActivity() {
 
         }
     }
-    */
-
 
     private fun tablaDePuntosDeHabilidad() {
 
