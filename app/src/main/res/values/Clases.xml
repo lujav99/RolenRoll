@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="Clase">
-        <item>Bárbaro</item>
-        <item>Bardo</item>
-        <item>Clerigo</item>
-        <item>Druida</item>
-        <item>Explorador</item>
-        <item>Guerrero</item>
-        <item>Hechicero</item>
-        <item>Mago</item>
-        <item>Monje</item>
-        <item>Paladín</item>
-        <item>Pícaro</item>
-    </string-array>
-</resources>
+<resources></resources>

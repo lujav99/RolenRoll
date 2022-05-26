@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.habilidades.HabilidadesFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Habilidades"
+                android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp">
+                <!--Text views-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Total"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Mod"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Puntos"
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Penal."
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Misc."
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                </TableRow>
+                <!--Acrobacias DEX-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Acrobacias" />
+
+                    <TextView
+                        android:id="@+id/txtvAcrobaciasTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAcrobaciasMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAcrobaciasPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtAcrobaciasPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtAcrobaciasMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Actuar CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Actuar" />
+
+                    <TextView
+                        android:id="@+id/txtvActuarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvActuarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvActuarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtActuarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtActuarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Artesanía INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Artesanía" />
+
+                    <TextView
+                        android:id="@+id/txtvArtesaniaTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvArtesaniaMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvArtesaniaPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtArtesaniaPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtArtesaniaMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Artista de la fuga DEX-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Artista de la fuga" />
+
+                    <TextView
+                        android:id="@+id/txtvADLFTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvADLFMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvADLFPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtADLFPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtADLFMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Averiguar intenciones WIS-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Averiguar intenciones" />
+
+                    <TextView
+                        android:id="@+id/txtvAITotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAIMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAIPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtAIPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtAIMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Avistar WIS-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Avistar" />
+
+                    <TextView
+                        android:id="@+id/txtvAvistarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAvistarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvAvistarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtAvistarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtAvistarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Buscar INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Buscar" />
+
+                    <TextView
+                        android:id="@+id/txtvBuscarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvBuscarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvBuscarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtBuscarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtBuscarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Concentracion CON-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Concentración" />
+
+                    <TextView
+                        android:id="@+id/txtvConcentracionTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvConcentracionMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvConcentracionPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtConcentracionPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtConcentracionMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Curar WIS-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Curar" />
+
+                    <TextView
+                        android:id="@+id/txtvCurarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvCurarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvCurarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtCurarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtCurarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Desactivar dispositivo INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Desactivar dispositivo" />
+
+                    <TextView
+                        android:id="@+id/txtvDDTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDDMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDDPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtDDPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDDMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Descifrar Escritura INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Descifrar Escritura" />
+
+                    <TextView
+                        android:id="@+id/txtvDETotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDEMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDEPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtDEPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDEMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Diplomacia CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Diplomacia" />
+
+                    <TextView
+                        android:id="@+id/txtvDiplomaciaTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDiplomaciaMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDiplomaciaPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtDiplomaciaPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDiplomaciaMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Disfrazarse CHA-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Disfrazarse" />
+
+                    <TextView
+                        android:id="@+id/txtvDisfrazarseTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDisfrazarseMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvDisfrazarsePuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtDisfrazarsePenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtDisfrazarseMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Engañar CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Engañar" />
+
+                    <TextView
+                        android:id="@+id/txtvEngannarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEngannarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEngannarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtEngannarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtEngannarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Equilibrio DEX-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Equilibrio" />
+
+                    <TextView
+                        android:id="@+id/txtvEquilibrioTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEquilibrioMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEquilibrioPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtEquilibrioPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtEquilibrioMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Escalar STR/DEX-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Escalar" />
+
+                    <TextView
+                        android:id="@+id/txtvEscalarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEscalarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEscalarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtEscalarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtEscalarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Escuchar WIS-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Escuchar" />
+
+                    <TextView
+                        android:id="@+id/txtvEscucharTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEscucharMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvEscucharPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtEscucharPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtEscucharMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Falsificacion INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Falsificación" />
+
+                    <TextView
+                        android:id="@+id/txtvFalsificacionTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvFalsificacionMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvFalsificacionPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtFalsificacionPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtFalsificacionMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Hechiceria INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Hechicería" />
+
+                    <TextView
+                        android:id="@+id/txtvHechiceriaTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvHechiceriaMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvHechiceriaPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtHechiceriaPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtHechiceriaMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Intimidar CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Intimidar" />
+
+                    <TextView
+                        android:id="@+id/txtvIntimidarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvIntimidarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvIntimidarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtIntimidarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtIntimidarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Juego de manos DEX-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Juego de manos" />
+
+                    <TextView
+                        android:id="@+id/txtvJDMTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvJDMMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvJDMPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtJDMPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtJDMMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Manejar animales CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Manejar animales" />
+
+                    <TextView
+                        android:id="@+id/txtvMATotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMAMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMAPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtMAPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtMAMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Montar DEX-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Montar" />
+
+                    <TextView
+                        android:id="@+id/txtvMontarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMontarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMontarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtMontarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtMontarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Muévete en silencio DEX-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Muévete en silencio" />
+
+                    <TextView
+                        android:id="@+id/txtvMESTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMESMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvMESPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtMESPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtMESMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Nadar STR-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Nadar" />
+
+                    <TextView
+                        android:id="@+id/txtvNadarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvNadarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvNadarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtNadarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtNadarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Ocultar DEX-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Ocultar" />
+
+                    <TextView
+                        android:id="@+id/txtvOcultarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvOcultarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvOcultarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtOcultarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtOcultarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Profesion WIS-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Profesión" />
+
+                    <TextView
+                        android:id="@+id/txtvProfesionTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvProfesionMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvProfesionPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtProfesionPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtProfesionMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Reunir información CHA-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Reunir información" />
+
+                    <TextView
+                        android:id="@+id/txtvRITotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvRIMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvRIPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtRIPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtRIMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Arcano INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+
+                        android:gravity="center"
+                        android:text="Saber Arcano" />
+
+                    <TextView
+                        android:id="@+id/txtvSATotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSAMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSAPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSAPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSAMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber de Historia INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Historia" />
+
+                    <TextView
+                        android:id="@+id/txtvSHTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSHMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSHPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSHPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSHMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber de Mazmorra INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Mazmorra" />
+
+                    <TextView
+                        android:id="@+id/txtvSMTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSMMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSMPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSMPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSMMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Geografía INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Geografía" />
+
+                    <TextView
+                        android:id="@+id/txtvSGTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSGMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSGPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSGPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSGMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Ingeniero INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Ingeniero" />
+
+                    <TextView
+                        android:id="@+id/txtvSITotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSIMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSIPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSIPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSIMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Local INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Local" />
+
+                    <TextView
+                        android:id="@+id/txtvSLTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSLMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSLPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSLPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSLMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Los Planos INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+
+                        android:gravity="center"
+                        android:text="Saber Los Planos" />
+
+                    <TextView
+                        android:id="@+id/txtvSLPTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSLPMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSLPPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSLPPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSLPMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Naturaleza INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Naturaleza" />
+
+                    <TextView
+                        android:id="@+id/txtvSNaTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSNaMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSNaPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSNaPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSNaMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Nobleza INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Nobleza" />
+
+                    <TextView
+                        android:id="@+id/txtvSNoTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSNoMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSNoPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSNoPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSNoMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saber Religión INT-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saber Religión" />
+
+                    <TextView
+                        android:id="@+id/txtvSRTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSRMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSRPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSRPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSRMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Saltar DEX/STR-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Saltar" />
+
+                    <TextView
+                        android:id="@+id/txtvSaltarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSaltarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSaltarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSaltarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSaltarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Supervivencia WIS-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Supervivencia" />
+
+                    <TextView
+                        android:id="@+id/txtvSupervivenciaTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSupervivenciaMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvSupervivenciaPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtSupervivenciaPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtSupervivenciaMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Tasar INT-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Tasar" />
+
+                    <TextView
+                        android:id="@+id/txtvTasarTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvTasarMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvTasarPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtTasarPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtTasarMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Usar la cuerda DEX-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Usar cuerda" />
+
+                    <TextView
+                        android:id="@+id/txtvUCTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvUCMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvUCPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtUCPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtUCMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+                <!--Usar objeto mágico CHA-->
+                <TableRow android:background="@color/lightgray">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Usar objeto mágico" />
+
+                    <TextView
+                        android:id="@+id/txtvUOMTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvUOMMod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <TextView
+                        android:id="@+id/txtvUOMPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+                    <EditText
+                        android:id="@+id/etxtUOMPenalizador"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtUOMMisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

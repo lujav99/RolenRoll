@@ -53,14 +53,18 @@
 
     <Button
         android:id="@+id/bttnRegistrar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar usuario" />
+        android:text="Registrar usuario"
+        android:background="@color/rojo"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:id="@+id/bttnIrALogIn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ya tengo cuenta" />
+        android:text="Ya tengo cuenta"
+        android:background="@color/rojo"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

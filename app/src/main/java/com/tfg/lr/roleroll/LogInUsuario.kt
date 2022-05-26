@@ -42,7 +42,7 @@ class LogInUsuario : AppCompatActivity() {
             logear();
         }
         bttnIrARegistro.setOnClickListener{
-            startActivity(Intent(applicationContext, RegistroUsuario::class.java))
+            startActivity(Intent(application, RegistroUsuario::class.java))
             finish()
         }
 
@@ -59,7 +59,7 @@ class LogInUsuario : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, contrasenna)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
-                        startActivity(Intent(this, VerPersonaje::class.java))
+                        startActivity(Intent(this, FichaPersonaje::class.java))
                         finish()
                     } else {
                         Reutilizables.hacerToast(this, "MAL")

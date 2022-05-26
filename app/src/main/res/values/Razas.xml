@@ -1,13 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="Raza">
-        <item>Elfo</item>
-        <item>Enano</item>
-        <item>Gnomo</item>
-        <item>Humano</item>
-        <item>Humano</item>
-        <item>Mediano</item>
-        <item>Semielfo</item>
-        <item>Semiorco</item>
-    </string-array>
-</resources>
+<resources></resources>

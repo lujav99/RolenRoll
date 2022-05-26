@@ -49,7 +49,7 @@ class RegistroUsuario : AppCompatActivity() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, contrasenna1)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
-                        startActivity(Intent(this, VerPersonaje::class.java))
+                        startActivity(Intent(this, FichaPersonaje::class.java))
                         finish()
                     } else {
                         Reutilizables.hacerToast(this, "MAL")

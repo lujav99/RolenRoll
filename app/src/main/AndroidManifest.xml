@@ -11,14 +11,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RoleRoll">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".CrearPersonaje"
+            android:name=".FichaPersonaje"
             android:exported="false"
-            android:label="@string/title_activity_crear_personaje" />
-        <activity
-            android:name=".VerPersonaje"
-            android:exported="false" />
+            android:label="@string/title_activity_ficha_personaje" />
+
         <activity
             android:name=".LogInUsuario"
             android:exported="true">
