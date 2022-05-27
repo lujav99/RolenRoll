@@ -5,4 +5,37 @@
     <string name="title_habilidades">Tabla de habilidades</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_ficha_personaje">FichaPersonaje</string>
+
+    <string-array name="Razas">
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Gnomo</item>
+        <item>Humano</item>
+        <item>Mediano</item>
+        <item>Semielfo</item>
+        <item>Semiorco</item>
+    </string-array>
+
+    <string-array name="Clases">
+        <item>Bárbaro</item>
+        <item>Bardo</item>
+        <item>Clerigo</item>
+        <item>Druida</item>
+        <item>Explorador</item>
+        <item>Guerrero</item>
+        <item>Hechicero</item>
+        <item>Mago</item>
+        <item>Monje</item>
+        <item>Paladín</item>
+        <item>Pícaro</item>
+    </string-array>
+
+    <string-array name="Tamanno">
+        <item>Pequeño</item>
+        <item>Normal</item>
+        <item>Grande</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
 </resources>

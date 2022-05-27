@@ -13,12 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".FichaPersonaje"
+            android:name=".controladores.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".controladores.FichaPersonaje"
             android:exported="false"
             android:label="@string/title_activity_ficha_personaje" />
-
         <activity
-            android:name=".LogInUsuario"
+            android:name=".controladores.LogInUsuario"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistroUsuario"
+            android:name=".controladores.RegistroUsuario"
             android:exported="false" />
     </application>
 

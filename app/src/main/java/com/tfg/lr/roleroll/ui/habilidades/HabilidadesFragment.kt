@@ -34,13 +34,6 @@ class HabilidadesFragment : Fragment() {
         }
 
 
-        /*listaMods.set(0,"0")
-        listaMods.set(1,"0")
-        listaMods.set(2,"0")
-        listaMods.set(3,"0")
-        listaMods.set(4,"0")
-        listaMods.set(5,"0")*/
-
         tablaDeHabilidades(binding)
 
         return root
