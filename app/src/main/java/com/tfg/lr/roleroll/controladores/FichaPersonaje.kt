@@ -15,15 +15,22 @@ class FichaPersonaje : AppCompatActivity() {
 
     private var pj: Personaje? = null
 
+    lateinit var binding: ActivityFichaPersonajeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityFichaPersonajeBinding.inflate(layoutInflater)
+        binding = ActivityFichaPersonajeBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
         val idPj = intent.getIntExtra("idPj", -1)
         pj = pjFromId(idPj)
+
+        val bundle = Bundle()
+
+        bundle.putInt("idPj", idPj)
+        
 
         val navView: BottomNavigationView = binding.navView
 
@@ -34,7 +41,7 @@ class FichaPersonaje : AppCompatActivity() {
             setOf(
                 R.id.navigation_pdh_salvaciones,
                 R.id.navigation_habilidades,
-                R.id.navigation_notifications
+                R.id.navigation_datos
             )
         )
 //        setupActionBarWithNavController(navController, appBarConfiguration)

@@ -4,11 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tfg.lr.roleroll.alfombra.Personaje
+import com.tfg.lr.roleroll.controladores.ListaPersonajes
 import com.tfg.lr.roleroll.databinding.CardPjBinding
 
 class CardAdapter(
     private val pjs: List<Personaje>,
-    private val clickListener: PjClickListener
+    private val clickListener: ListaPersonajes
 ) : RecyclerView.Adapter<CardViewHolder>() {
 
 

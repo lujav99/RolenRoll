@@ -6,10 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.tfg.lr.roleroll.alfombra.Personaje
 import com.tfg.lr.roleroll.databinding.FragmentPdhSalvacionesBinding
+import com.tfg.lr.roleroll.ui.habilidades.HabilidadesFragment
 import java.lang.Exception
 
 class PDHySalvacionesFragment : Fragment() {
+
+    companion object {
+        var puntosEditables = false
+    }
+
+    private lateinit var pj: Personaje
 
     private var _binding: FragmentPdhSalvacionesBinding? = null
 
@@ -28,17 +36,17 @@ class PDHySalvacionesFragment : Fragment() {
         _binding = FragmentPdhSalvacionesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        rellenarTablas(binding)
+        habilitarPuntos(HabilidadesFragment.puntosEditables)
+        rellenarTablas()
         return root
     }
 
-    private fun rellenarTablas(binding: FragmentPdhSalvacionesBinding) {
-        tablaDePuntosDeHabilidad(binding)
-        tablaDeSalvaciones(binding)
+    private fun rellenarTablas() {
+        tablaDePuntosDeHabilidad()
+        tablaDeSalvaciones()
     }
 
-
-    private fun tablaDePuntosDeHabilidad(binding: FragmentPdhSalvacionesBinding) {
+    private fun tablaDePuntosDeHabilidad() {
 
         binding.txtvSTRTotal.setText(
             hacerTotalHabilidades(
@@ -95,7 +103,7 @@ class PDHySalvacionesFragment : Fragment() {
         binding.txtvCHAMod.setText(((controlDeVaciosYParseadorInt(binding.txtvCHATotal.getText().toString())-10)/2).toString())
     }
 
-    private fun tablaDeSalvaciones(binding: FragmentPdhSalvacionesBinding) {
+    private fun tablaDeSalvaciones() {
 
         binding.txtvFortitudeMod.setText(binding.txtvCONMod.getText().toString())
         binding.txtvFortitudeTotal.setText(
@@ -130,7 +138,6 @@ class PDHySalvacionesFragment : Fragment() {
         )
     }
 
-
     private fun controlDeVaciosYParseadorInt(cadena: String): Int {
         var num :Int = 0
         try {
@@ -149,6 +156,68 @@ class PDHySalvacionesFragment : Fragment() {
     private fun hacerTotal(num1: Int, num2: Int, num3: Int, num4: Int): Int {
         return num1 + num2 + num3 + num4
     }
+
+    private fun habilitarPuntos(valor: Boolean) {
+        binding.txtvSTRBase.isEnabled = valor
+        binding.txtvDEXBase.isEnabled = valor
+        binding.txtvCONBase.isEnabled = valor
+        binding.txtvINTBase.isEnabled = valor
+        binding.txtvWISBase.isEnabled = valor
+        binding.txtvCHABase.isEnabled = valor
+
+        binding.txtvFortitudeBase.isEnabled = valor
+        binding.txtvReflexBase.isEnabled = valor
+        binding.txtvWillBase.isEnabled = valor
+
+    }
+
+    private fun rellenarFragment() {
+        binding.txtvSTRBase.setText(pj.baseSTR)
+        binding.etxtSTRMisc.setText(pj.miscSTR)
+        binding.txtvDEXBase.setText(pj.baseDEX)
+        binding.etxtDEXMisc.setText(pj.miscDEX)
+        binding.txtvCONBase.setText(pj.baseCON)
+        binding.etxtCONMisc.setText(pj.miscCON)
+        binding.txtvINTBase.setText(pj.baseINT)
+        binding.etxtINTMisc.setText(pj.miscINT)
+        binding.txtvWISBase.setText(pj.baseWIS)
+        binding.etxtWISMisc.setText(pj.miscWIS)
+        binding.txtvCHABase.setText(pj.baseCHA)
+        binding.etxtCHAMisc.setText(pj.miscCHA)
+
+        binding.txtvFortitudeBase.setText(pj.baseFortitude)
+        binding.etxtFortitudeMisc.setText(pj.miscFortitude)
+        binding.txtvReflexBase.setText(pj.baseReflex)
+        binding.etxtReflexMisc.setText(pj.miscReflex)
+        binding.txtvWillBase.setText(pj.baseWill)
+        binding.etxtWillMisc.setText(pj.miscWill)
+
+    }
+
+    private fun rellenarPj() {
+        pj.baseSTR = binding.txtvSTRBase.text.toString().toInt()
+        pj.miscSTR = binding.etxtSTRMisc.text.toString().toInt()
+        pj.baseDEX = binding.txtvDEXBase.text.toString().toInt()
+        pj.miscDEX = binding.etxtDEXMisc.text.toString().toInt()
+        pj.baseCON = binding.txtvCONBase.text.toString().toInt()
+        pj.miscCON = binding.etxtCONMisc.text.toString().toInt()
+        pj.baseINT = binding.txtvINTBase.text.toString().toInt()
+        pj.miscINT = binding.etxtINTMisc.text.toString().toInt()
+        pj.baseWIS = binding.txtvWISBase.text.toString().toInt()
+        pj.miscWIS = binding.etxtWISMisc.text.toString().toInt()
+        pj.baseCHA = binding.txtvCHABase.text.toString().toInt()
+        pj.miscCHA = binding.etxtCHAMisc.text.toString().toInt()
+
+        pj.baseFortitude = binding.txtvFortitudeBase.text.toString().toInt()
+        pj.miscFortitude = binding.etxtFortitudeMisc.text.toString().toInt()
+        pj.baseReflex = binding.txtvReflexBase.text.toString().toInt()
+        pj.miscReflex = binding.etxtReflexMisc.text.toString().toInt()
+        pj.baseWill = binding.txtvWillBase.text.toString().toInt()
+        pj.miscWill = binding.etxtWillMisc.text.toString().toInt()
+
+    }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -1,3 +1,4 @@
+/*
 package com.tfg.lr.roleroll.ui.lista
 
 import android.content.Intent
@@ -35,38 +36,19 @@ class ListaFragment : Fragment(), PjClickListener {
         _binding = FragmentListaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        setRecyclerView(binding, this)
 
-        setOnclicListeners(binding)
 
 
 
         return root
     }
 
-    override fun cardOnClickListener(pj: Personaje) {
-        val intent = Intent(context, FichaPersonaje::class.java)
-        intent.putExtra("idPj", pj.id)
-        startActivity(intent)
-
-    }
-
-    private fun setOnclicListeners(binding: FragmentListaBinding) {
 
 
-    }
-
-    private fun setRecyclerView(binding: FragmentListaBinding, mainActivity: ListaFragment) {
-        val adapter = CardAdapter(listaPjs, mainActivity)
-
-        binding.rvLista.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        binding.rvLista.adapter = adapter
-
-    }
 
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-}
+}*/

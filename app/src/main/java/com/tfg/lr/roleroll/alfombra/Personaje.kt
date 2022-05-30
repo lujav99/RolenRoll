@@ -225,7 +225,7 @@ class Personaje(
 
     fun leerEnBD() {
 
-        Reutilizables.db.collection("personajes").document(email.toString()).get().toString()
+        Reutilizables.db.collection("personajes").document(id.toString()).get().toString()
 
         println()
     }
@@ -235,7 +235,7 @@ class Personaje(
     }
 
     fun guardarEnBD() {
-        Reutilizables.db.collection("personajes").document(email.toString()).set(
+        Reutilizables.db.collection("personajes").document(id.toString()).set(
             hashMapOf(
                 "nivel" to nivel,
                 "nombre" to nombre,

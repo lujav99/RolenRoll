@@ -105,50 +105,6 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Dotes"
-                android:textSize="20dp"
-                app:layout_constraintStart_toStartOf="@+id/etxtDotes"
-                app:layout_constraintTop_toBottomOf="@+id/etxtHabilidadesRaza" />
-
-            <EditText
-                android:id="@+id/etxtDotes2"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="4dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine"
-                app:layout_constraintStart_toStartOf="@+id/etxtHabilidadesRaza"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
-                app:layout_constraintWidth_percent="0.5" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Inventario"
-                android:textSize="20dp"
-                app:layout_constraintStart_toEndOf="@+id/etxtDotes"
-                app:layout_constraintTop_toBottomOf="@+id/etxtHabilidadesClase" />
-
-            <EditText
-                android:id="@+id/etxtInventario2"
-                android:layout_width="188dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="4dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/etxtDotes"
-                app:layout_constraintTop_toBottomOf="@+id/textView14"
-                app:layout_constraintWidth_percent="0.5" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -304,11 +260,11 @@
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:text="Lenguajes"
                 android:textSize="20dp"
                 app:layout_constraintStart_toStartOf="@+id/etxtLenguajes"
-                app:layout_constraintTop_toBottomOf="@+id/etxtDotes2" />
+                app:layout_constraintTop_toBottomOf="@+id/etxtDotes" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -318,7 +274,7 @@
                 android:text="Otros"
                 android:textSize="20dp"
                 app:layout_constraintStart_toStartOf="@+id/etxtOtros"
-                app:layout_constraintTop_toBottomOf="@+id/etxtInventario2" />
+                app:layout_constraintTop_toBottomOf="@+id/etxtInventario" />
 
             <EditText
                 android:id="@+id/etxtLenguajes"
@@ -328,7 +284,7 @@
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                app:layout_constraintStart_toStartOf="@+id/etxtDotes2"
+                app:layout_constraintStart_toStartOf="@+id/etxtDotes"
                 app:layout_constraintTop_toBottomOf="@+id/textView18"
                 app:layout_constraintWidth_percent="0.5" />
 

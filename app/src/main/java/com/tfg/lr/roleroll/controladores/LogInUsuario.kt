@@ -35,6 +35,8 @@ class LogInUsuario : AppCompatActivity() {
         bttnLogIn = findViewById(R.id.bttnLogIn)
         bttnIrARegistro = findViewById(R.id.bttnIrARegistro)
 
+        etxtLogInEmail.setText("luisramosasensio@yahoo.es")
+        etxtLogInContrasenna.setText("luigi2002")
 
         // Guardar datos
         //val prefs = getSharedPreferences()
@@ -61,7 +63,7 @@ class LogInUsuario : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, contrasenna)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
-                        startActivity(Intent(this, FichaPersonaje::class.java))
+                        startActivity(Intent(this, ListaPersonajes::class.java))
                         finish()
                     } else {
                         Reutilizables.hacerToast(this, "MAL")

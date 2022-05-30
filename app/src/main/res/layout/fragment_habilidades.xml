@@ -9,7 +9,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,13 +113,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvAcrobaciasPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtAcrobaciasPenalizador"
@@ -156,13 +159,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvActuarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtActuarPenalizador"
@@ -203,13 +205,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvArtesaniaPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtArtesaniaPenalizador"
@@ -250,13 +251,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvADLFPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtADLFPenalizador"
@@ -297,13 +297,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvAIPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtAIPenalizador"
@@ -344,13 +343,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvAvistarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtAvistarPenalizador"
@@ -391,13 +389,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvBuscarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtBuscarPenalizador"
@@ -438,13 +435,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvConcentracionPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtConcentracionPenalizador"
@@ -485,13 +481,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvCurarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtCurarPenalizador"
@@ -532,13 +527,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvDDPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtDDPenalizador"
@@ -579,13 +573,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvDEPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtDEPenalizador"
@@ -626,13 +619,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvDiplomaciaPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtDiplomaciaPenalizador"
@@ -673,13 +665,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvDisfrazarsePuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtDisfrazarsePenalizador"
@@ -720,13 +711,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvEngannarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtEngannarPenalizador"
@@ -767,13 +757,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvEquilibrioPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtEquilibrioPenalizador"
@@ -814,13 +803,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvEscalarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtEscalarPenalizador"
@@ -861,13 +849,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvEscucharPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtEscucharPenalizador"
@@ -908,13 +895,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvFalsificacionPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtFalsificacionPenalizador"
@@ -955,13 +941,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvHechiceriaPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtHechiceriaPenalizador"
@@ -1002,13 +987,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvIntimidarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtIntimidarPenalizador"
@@ -1049,13 +1033,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvJDMPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtJDMPenalizador"
@@ -1096,13 +1079,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvMAPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtMAPenalizador"
@@ -1143,13 +1125,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvMontarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtMontarPenalizador"
@@ -1190,13 +1171,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvMESPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtMESPenalizador"
@@ -1237,13 +1217,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvNadarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtNadarPenalizador"
@@ -1284,13 +1263,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvOcultarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtOcultarPenalizador"
@@ -1331,13 +1309,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvProfesionPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtProfesionPenalizador"
@@ -1378,13 +1355,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvRIPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtRIPenalizador"
@@ -1426,13 +1402,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSAPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtSAPenalizador"
@@ -1473,13 +1448,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSHPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number"/>
 
                     <EditText
                         android:id="@+id/etxtSHPenalizador"
@@ -1520,13 +1494,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSMPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSMPenalizador"
@@ -1567,13 +1540,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSGPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSGPenalizador"
@@ -1614,13 +1586,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSIPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSIPenalizador"
@@ -1661,13 +1632,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSLPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSLPenalizador"
@@ -1709,13 +1679,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSLPPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSLPPenalizador"
@@ -1756,13 +1725,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSNaPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSNaPenalizador"
@@ -1803,13 +1771,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSNoPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSNoPenalizador"
@@ -1850,13 +1817,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSRPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSRPenalizador"
@@ -1897,13 +1863,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSaltarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSaltarPenalizador"
@@ -1944,13 +1909,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSupervivenciaPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSupervivenciaPenalizador"
@@ -1991,13 +1955,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvTasarPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtTasarPenalizador"
@@ -2038,13 +2001,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvUCPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtUCPenalizador"
@@ -2085,13 +2047,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvUOMPuntos"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtUOMPenalizador"

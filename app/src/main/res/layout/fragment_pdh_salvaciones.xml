@@ -107,13 +107,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvSTRBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtSTRMisc"
@@ -155,13 +154,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvDEXBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtDEXMisc"
@@ -203,13 +201,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvCONBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtCONMisc"
@@ -251,13 +248,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvINTBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtINTMisc"
@@ -300,13 +296,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvWISBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtWISMisc"
@@ -348,13 +343,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvCHABase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtCHAMisc"
@@ -463,13 +457,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvFortitudeBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtFortitudeMisc"
@@ -511,13 +504,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvReflexBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtReflexMisc"
@@ -559,13 +551,12 @@
                         android:text=""
                         android:textSize="@dimen/browser_actions_context_menu_min_padding" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/txtvWillBase"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+                        android:ems="10"
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/etxtWillMisc"

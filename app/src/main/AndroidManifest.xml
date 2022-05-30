@@ -13,6 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".controladores.ListaPersonajes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/NoActionBar" />
+        <activity
             android:name=".controladores.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />
