@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controladores.RegistroUsuario"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="50dp">
+
+    <TextView
+        android:id="@+id/txtVRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:text="Registro de usuario"
+        android:textAlignment="center"
+        android:textSize="@dimen/browser_actions_context_menu_min_padding" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/logo_rolenroll" />
+
+    <EditText
+        android:id="@+id/etxtRegisEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etxtRegisContrasenna1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/etxtRegisContrasenna2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Repetir contraseña"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/bttnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar usuario"
+        android:background="@color/rojo"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bttnIrALogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ya tengo cuenta"
+        android:background="@color/rojo"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
